@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAVA JAVA CAFE</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="format.css">
+	<script>
+		function validation()
+		{
+			var name = document.forms["Reserve"]["Name"];
+			var email = document.forms["Reserve"]["EMail"];
+			var phone = document.forms["Reserve"]["Mobile"];
+			var num = document.forms["Reserve"]["People"];
+			var address = document.forms["Reserve"]["Address"];
+			if (name.value=="")
+			{
+				window.alert("Please enter your name.");
+				name.focus();
+				return false;
+			}
+			if (address=="")
+			{
+				window.alert("Please enter your adderess.");
+				address.focus();
+				return false;
+			}
+			if (email.value=="")
+			{
+				window.alert("Please enter a valid e-mail address.");
+				email.focus();
+				return false;
+			}
+			if(email.value.indexOf("@",0)<0)
+			{
+				window.alert("Please enter valid e-mail address.");
+				email.focus();
+				return false;
+			}
+			if(phone.value=="")
+			{
+				window.alert("Please enter your mobile no.");
+				phone.focus();
+				return false;
+			}
+			if(num.selectedIndex < 1)
+			{
+				alert("Please enter number of people.");
+				num.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+		    <div id="branding">
+			<h1>The Java Lava Cafe</h1>
+			<h3>Monday through Saturday 6:30am to 8:800pm || Sunday 6:30am to 4:00pm </h3>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="food1.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li class="current"><a href="reservations.html">Reservations</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<section id="">
+		<div id="">
+			<h2 style="text-align: center">Reservations</h2>
+			<h4 style="text-align: center">Welcome, book a table and enjoy the dine!</h4>
+			<form name="Reserve" action="/submit.php" onsubmit="return validation()">
+			<p>Name:<input type="text" size=65 name="Name"></p><br>
+			<p>Address:<input type="text" size=65 name="Address"></p><br>
+			<p>E-mail Address:<input type="text" size=65 name="EMail"></p><br>
+			<p>Mobile No.:<input type="text" size=65 name="Mobile"></p><br>
+			<p>Select no. of people <select type="text" value="" name="People">
+				<option>1-2</option>
+				<option>2-4</option>
+				<option>4-8</option>
+			</select></p><br><br>
+			<p><input type="submit" value="send" name="Submit">
+				<input type="reset" value="Reset" name="Reset">
+			</p>
+		</form>
+		</div>
+	</section>
+	<footer>
+		<p>Indirapuram,Sector 62 Noida/Order Now-0522-123456789</p>
+		<p>Java Lava , Copyright &copy; 2019</p>
+	</footer>
+</body>
+</html>
+
+	
