@@ -1,2 +1,2 @@
 # JAVA-LAVA-CAFE
-An incomplete cafe website
+An simple cafe website using html,css,javascript.
