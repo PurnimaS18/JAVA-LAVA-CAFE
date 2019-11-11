@@ -1,0 +1,135 @@
+body{
+	background-image: url(coffee1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font: cursive;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+
+}
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+img{
+	vertical-align: middle;
+}
+.slideshow-container{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+.numbertext{
+	color: white;
+	font-size: 10px;
+	padding: 8px 12px;
+	position:	relative;
+	top: 0;
+}
+.dot{
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #bbb;
+	transition: background-color 0.6s ease;
+}
+.active{
+	background-color: #717171;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+validation{
+	
+}
+header{
+	
+	color: white;
+	padding-top: 10px;
+	min-height: 70px;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #branding{
+	float: left;
+}
+header #branding h1{
+	margin: 0px;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+header a:hover{
+	color: white;
+	font-weight: bold;
+}
+#showcase{
+	min-height: 400px;
+	text-align: center;
+	color: white;
+}
+#showcae h1{
+	margin-top: 100px;
+	font-size: 80px;
+	margin-bottom: 10px;
+}
+#showcase p{
+	font-size: 20px;
+}
+.split{
+	height: 80%;
+	width: 50%;
+	z-index: 1;
+	overflow-x: hidden;
+	top: 0px;
+	position: fixed;
+	padding-top: 20px;
+
+}
+.left{
+	left: 0;
+	
+}
+.right{
+	right: 0;
+
+}
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+form{
+	margin: 0 auto;
+	width: 600px;
+	color: white;
+}
+
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: white;
+	text-align: center;
+}
